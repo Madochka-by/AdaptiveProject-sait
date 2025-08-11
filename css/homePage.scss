@@ -1,0 +1,54 @@
+body {
+  font-family: Manrope;
+}
+.header {
+  padding: 5vh 10px 0 10px;
+
+  &-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    background: #f0f1f3;
+    border-radius: 25px;
+    padding: 10px 5px 10px 5px;
+
+    &-left {
+      padding: 15vh 5vw 20vh 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 130%;
+        letter-spacing: -4%;
+
+        span {
+          color: #72a1ff;
+        }
+      }
+
+      &__text {
+        color: #6f6f6f;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: -4%;
+      }
+    }
+    &-middle {
+      display: flex;
+      align-items: flex-end;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__img {
+        border-radius: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
