@@ -1,0 +1,55 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.op {
+  margin: 10px;
+}
+
+.container {
+  background: #292c2e;
+  border-radius: 25px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  @include flex-column;
+  gap: 20px;
+  width: 100%;
+
+  p,
+  h3 {
+    color: white;
+  }
+}
+
+.right {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  @include flex-column;
+  gap: 20px;
+  width: 100%;
+
+  p,
+  h3 {
+    color: white;
+  }
+}
+
+.element {
+  grid-column: 2/3;
+
+  &-frame {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

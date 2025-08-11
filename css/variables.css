@@ -1,0 +1,143 @@
+body {
+  font-family: Manrope;
+}
+body h1 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 130%;
+}
+body h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+}
+body h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+}
+body h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+body h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+}
+body .text1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+}
+body .text2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+body .text3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #5f5749;
+}
+
+.margin {
+  padding: 0 7vw;
+}
+
+.icons {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 5vh;
+}
+
+.orange {
+  color: #ffaa33;
+}
+
+.blue {
+  color: #72a1ff;
+}
+
+.bold {
+  color: #5f5749;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.frame .star {
+  font-size: 25px;
+}
+.frame .count {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #d8d8d8;
+}
+.frame-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.slider {
+  display: none;
+  width: 100%;
+  -webkit-appearance: none;
+}
+.slider::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #ededed;
+  border-radius: 10px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 3px;
+  background: #a1a1a1;
+  border-radius: 10px;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.block-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.block-frame__img {
+  width: 100%;
+}
