@@ -8,7 +8,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 30px;
+
+  padding: 0 7vw 30px 7vw;
 
   &-container {
     gap: 50px;
@@ -192,6 +193,154 @@
             }
             &.bluee::marker {
               color: #72a1ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .content {
+    background-size: contain;
+
+    &-container {
+      width: 100%;
+      grid-template-columns: repeat(2, 40%);
+      gap: 20px;
+
+      &-block {
+        &-info {
+          &-news {
+            &-wraper {
+              &-frame {
+                &__img {
+                  width: 80%;
+                }
+              }
+            }
+          }
+          &-gr {
+            padding-top: 5vh;
+
+            &__group {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .content {
+    background-size: cover;
+
+    &-container {
+      &-block {
+        &-info {
+          &-news {
+            &-wraper {
+              &-frame {
+                &__img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          &-gr {
+            &__group {
+              width: 41%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    background-size: cover;
+
+    &-container {
+      width: 100%;
+      grid-template-columns: repeat(1, 100%);
+      gap: 20px;
+
+      &-block {
+        &-info {
+          &-images {
+            &-two {
+              #percent {
+                font-size: 20px;
+              }
+              span {
+                font-size: 20px;
+              }
+            }
+          }
+          &-news {
+            &-wraper {
+              &-frame {
+                &__img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          &-gr {
+            padding-top: 5vh;
+
+            &__group {
+              width: 10%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .content {
+    background-size: cover;
+    &-container {
+      gap: 70px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .content {
+    &-container {
+      &-block {
+        &-info {
+          &-images {
+            &-one {
+              gap: 10px;
+              span {
+                font-size: 15px;
+              }
+
+              &-result {
+                width: 60%;
+
+                &-top {
+                  gap: 50px;
+                }
+                &-bot {
+                  gap: 20px;
+                }
+              }
+            }
+            &-two {
+              gap: 25px;
+            }
+            &-three {
+              gap: 25px;
             }
           }
         }

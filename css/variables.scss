@@ -49,9 +49,9 @@ body {
   }
 }
 
-.margin {
-  padding: 0 7vw;
-}
+// .margin {
+//   padding: 0 7vw;
+// }
 .icons {
   align-items: flex-end;
   padding-bottom: $padding;
@@ -124,6 +124,102 @@ body {
 
     &__img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .block {
+    &-frame {
+      &__img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    h1 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 130%;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 130%;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 130%;
+    }
+    h4 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+    }
+    .text1 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+    }
+    .text2 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+    }
+    .text3 {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 130%;
+      color: #5f5749;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    .text2 {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+    }
+    .bold {
+      color: #5f5749;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 130%;
+    }
+  }
+
+  .icons {
+    img {
+      width: 20%;
+    }
+  }
+  .block {
+    &-frame {
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .icons {
+    padding: 0;
+    justify-content: flex-end;
+
+    img {
+      width: 10%;
     }
   }
 }

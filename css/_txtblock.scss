@@ -1,6 +1,7 @@
 .txtblock {
   display: flex;
   margin: 15vh 0;
+  padding: 0 7vw;
   justify-content: space-between;
 
   &-container {
@@ -18,14 +19,30 @@
       font-weight: 600;
       font-size: 42px;
     }
+  }
+}
 
-    &__text {
-      display: flex;
-      gap: 5px;
-      color: #000000;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 130%;
+@media (max-width: 1220px) {
+  .txtblock {
+    margin: 5vh 0;
+    padding: 0 7vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .txtblock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 10px;
+    &-container {
+      width: 100%;
+
+      span {
+        font-size: 24px;
+        vertical-align: sub;
+      }
     }
   }
 }

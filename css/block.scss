@@ -10,8 +10,7 @@
 .container {
   background: #292c2e;
   border-radius: 25px;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding: 5vh 7vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -51,5 +50,24 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .op {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 25px 25px 0 0;
   }
 }
