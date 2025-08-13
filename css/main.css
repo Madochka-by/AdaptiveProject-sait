@@ -1020,7 +1020,7 @@ body .text3 {
     gap: 70px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 400px) {
   .content-container-block-info-images-one {
     gap: 10px;
   }
